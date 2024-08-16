@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+    </style>
+    
+    <script>
+
+        //declaração e inserção de valores nas variáveis
+        let a = 22
+        let b = 34
+
+        //ctrl + k + u 
+        //ctrl + k + c
+        /*  os valores para a adição
+        */
+        let soma = a + b;
+        console.log("A soma de " + a + " + " + b + " é: " + soma);
+
+        let subtracao = a - b;
+        console.log("A subtração de " + a + " - " + b + " é: " + subtracao);
+
+        //alterando valores
+        a = 9;
+        b = 2;
+
+        let divisao = a / b;
+        let resto = a % b;
+        console.log("A divisão de " + a + " / " + b + " é: " + divisao);
+        console.log("o resto da divisão é: " + resto)
+
+        let multiplicacao = a * b;
+        console.log("A Multiplicação de " + a + " x " + b + " é: " + multiplicacao);
+
+        let exponenciacao = a ** b
+        console.log("exponenciação: " + exponenciacao);
+
+
+        //if e else para descobrir se é par ou impar
+        let testeDeParOuImpar = 5;
+        
+        if (testeDeParOuImpar %2 != 0 ) {
+            console.log("é impar");
+        } else {
+            console.log("é par");
+        }
+
+        //incremento e decremento 
+        let incremento; 
+        incremento = 5;
+
+        console.log("valor antes do incremento: " + incremento)
+
+        incremento ++;
+        console.log("valor depois do incremento: " + incremento)
+
+        let decremento = 5;
+        console.log("valor antes do decremento: " + decremento)
+        
+        decremento --;
+        decremento -=2;
+        //resultado 3
+        console.log("valor depois do decremento: " + decremento)
+
+
+        console.log("Exercícios")
+        console.log("média aritmética");
+
+        let nota1 = 6;
+        let nota2 = 10;
+        let nota3 = 4;
+        let medArit = (nota1 + nota2 + nota3)/3;
+        console.log("A média aritmética de " + nota1 + " + "+ nota2 + " + " + nota3 + " é igual a: " + medArit);
+
+        console.log("Calcular a base e altura do triangulo:");
+        let base = 2;
+        let altura = 5;
+        let areaTriang = (base * altura)/2;
+
+        console.log("O resultado do calculo da área do triângulo é base* altura/2 que foi: " + areaTriang);
+
+        
+        console.log("Incremento e decremento: ");
+        let incr = 5;
+        let decr = 5;
+
+        console.log("Decremento antes:" + decr);
+        let resultDecr = decr --;
+        console.log("Decremento depois " + decr);
+        
+
+        console.log("incremento antes: " + incr);
+        let resultIncr = incr ++;
+        console.log("incremento depois: " + incr);
+
+        console.log("\nresto da divisão");
+        let valore1 = 10;
+        let valore2 = 4;
+
+        divisa = valore1 % valore2;
+
+        console.log("o resultado do resto da divisão de " + valore1 + " / " + valore2 + " é igual a " + divisa);
+
+
+        console.log("\nConversão fahreheit to celcius: ");
+        let fahreheit = 200;
+        //(fahrenheit - 32) * 5 / 9
+
+        let celcius = (fahreheit - 32) * 5/9;
+        console.log("a conversão de " + fahreheit + " fahreheit para Celcius é: " + celcius);
+
+        console.log("\nCalcular o dobro e a metade do numero:")
+        let number = 10;
+        let dobro = number * 2;
+        let metade = number /2;
+        console.log("O valor do dobro de  " + number + " é : " +dobro);
+        Console.log("A metade de " + number + " é: " + metade);
+
+
+        console.log("\ndados dois numeros, calcule o resultado da exponenciação elevado ao segundo");
+        let valorin1 = 5;
+        let valorin2 = 5;
+        let expon = valorin1 ** valorin2;
+        console.log("resultado da exponenciação: " + expon)
+
+
+
+    </script>
+</body>
+</html>
