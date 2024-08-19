@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let idade = 1011;
+
+        if (idade <= 12) {
+            console.log("você é uma criança!" + "Você tem " + idade + " anos");
+        } else if (idade > 12 && idade <= 17) {
+            console.log("você é adolescente/jovem!" + "Você tem " + idade + " anos");
+        } else if (idade >= 18 && idade <= 59) {
+            console.log("você é um adulto");
+        } else if (idade >= 60 && idade <= 90) {
+            console.log("você é um idoso");
+        } else if (idade >= 91 && idade <= 110) {
+            console.log("você é uma lenda!")
+        } else {
+            console.log("P#ta m$rda! isso foi do kct");
+        }
+
+
+        /*
+        SWITCH CASE 
+        */
+
+        let diaDaSemana = 5;
+
+
+        switch (diaDaSemana) {
+            case 1:
+                dia = ("Domingo");
+                break;
+
+            case 2:
+                dia = ("Segunda-feira");
+                break;
+
+            case 3:
+                dia = ("Terça-feira");
+                break;
+
+            case 4:
+                dia = ("Quarta-feira");
+                break;
+
+            case 5:
+                dia = ("Quinta-feira");
+                break;
+
+            case 6:
+                dia = ("Sexta-feira");
+                break;
+
+            case 7:
+                dia = ("Sábado");
+                break;
+
+            default:
+                dia = "dia inválido"
+                break;
+        }
+
+        console.log(dia);
+
+
+
+        console.log("ATIVIDADES CONDICIONAIS")
+        /*
+            Escreva um programa que pode 
+            ver se é positivo, negativo e neutro
+        */
+
+        let valorDigitado = 1;
+
+
+        if (valorDigitado > 0) {
+            console.log("O valor é positivo " + valorDigitado);
+        } else if (valorDigitado == 0) {
+            console.log("O valor é zero: " + valorDigitado);
+        } else {
+            console.log("O valor é menor que zero: " + valorDigitado);
+        }
+
+
+        console.log("\n\n Segunda atividade:\n\n");
+
+        /*
+        Exercício 2 
+        , separa texto. utilize . para fazer decimal
+        OPERAÇÃO MATEMÁTICA COM UM VALOR UTILIZE INTEIRO
+        COM O CPF NÃO SE FAZ OPERAÇÃO MATEMÁTICA
+        CPF PRECISA SER ARMAZENADA COMO TEXTO
+        *
+        
+        ESCREVA UM PROGRAMA SOBRE PAR OU IMPAR/
+    */
+
+        console.log("Escreva um programa sobre par ou impar");
+
+        let ValorASerVerificado = 1;
+
+        if (ValorASerVerificado % 2 == 0) {
+            console.log("O valor é par");
+        } else {
+            console.log("O valor é ímpar");
+        }
+
+
+        /*
+        Desafio de verificar idade e classificar
+        */
+
+        let idadeCorreta = prompt('Digite a sua idade');
+
+        if (idadeCorreta <= 12) {
+            console.log("você é uma criança!" + "Você tem " + idadeCorreta + " anos");
+        } else if (idadeCorreta > 12 && idadeCorreta <= 17) {
+            console.log("você é adolescente/jovem!" + "Você tem " + idadeCorreta + " anos");
+        } else if (idadeCorreta >= 18 && idadeCorreta <= 59) {
+            console.log("você é um adulto");
+        } else if (idadeCorreta >= 60 && idadeCorreta <= 90) {
+            console.log("você é um idoso");
+        } else if (idadeCorreta >= 91 && idadeCorreta <= 110) {
+            console.log("você é uma lenda!")
+        } else {
+            console.log("P#ta m$rda! isso foi do kct");
+        }
+
+
+
+        /*
+        Escreva um parâmetro que classifique
+         as notas em A, B, C, D, F;
+        */
+        console.log("\n\n\nVerificar notas da sua atividade");
+
+        let notasGrade = prompt("Digite o valor da sua nota de 1 a 5:\n A = > 90, B = > 80, C >60, D > 50, F < 50 ");
+
+
+        if(notasGrade < 50) {
+            console.log("Nem Noé, irmão - nota F");
+        } else if (notasGrade >= 50 && notasGrade < 60) {
+            console.log("Estude mais. - Nota D");
+        } else if(notasGrade >= 60 && notasGrade < 70) {
+            console.log("Mais um pouco e é um C");
+        } else if(notasGrade >= 70 && notasGrade <= 80) {
+            console.log("Mais um pouquinho meu mano - Nota B");
+        } else if(notasGrade > 80) {
+            console.log("Parabéns! estude menos seu MEGAMENTE");
+        } else {
+            console.log("Avacalha não painho");
+        }
+        
+
+    </script>
+</body>
+
+</html>
