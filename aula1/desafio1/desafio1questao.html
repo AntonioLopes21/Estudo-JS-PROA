@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultima questão</title>
+</head>
+
+<body>
+    <script>console.log("ATIVIDADES CONDICIONAIS")
+        /*
+            Escreva um programa que pode 
+            ver se é positivo, negativo e neutro
+        */
+
+        let valorDigitado = 1;
+
+
+        if (valorDigitado > 0) {
+            console.log("O valor é positivo " + valorDigitado);
+        } else if (valorDigitado == 0) {
+            console.log("O valor é zero: " + valorDigitado);
+        } else {
+            console.log("O valor é menor que zero: " + valorDigitado);
+        }
+
+
+        console.log("\n\n Segunda atividade:\n\n");
+
+        /*
+        Exercício 2 
+        , separa texto. utilize . para fazer decimal
+        OPERAÇÃO MATEMÁTICA COM UM VALOR UTILIZE INTEIRO
+        COM O CPF NÃO SE FAZ OPERAÇÃO MATEMÁTICA
+        CPF PRECISA SER ARMAZENADA COMO TEXTO
+        *
+        
+        ESCREVA UM PROGRAMA SOBRE PAR OU IMPAR/
+    */
+
+        console.log("Escreva um programa sobre par ou impar");
+
+        let ValorASerVerificado = 1;
+
+        if (ValorASerVerificado % 2 == 0) {
+            console.log("O valor é par");
+        } else {
+            console.log("O valor é ímpar");
+        }
+
+
+        /*
+        Desafio de verificar idade e classificar
+        */
+
+        let idadeCorreta = prompt('Digite a sua idade');
+
+        if (idadeCorreta <= 12) {
+            console.log("você é uma criança!" + "Você tem " + idadeCorreta + " anos");
+        } else if (idadeCorreta > 12 && idadeCorreta <= 17) {
+            console.log("você é adolescente/jovem!" + "Você tem " + idadeCorreta + " anos");
+        } else if (idadeCorreta >= 18 && idadeCorreta <= 59) {
+            console.log("você é um adulto");
+        } else if (idadeCorreta >= 60 && idadeCorreta <= 90) {
+            console.log("você é um idoso");
+        } else if (idadeCorreta >= 91 && idadeCorreta <= 110) {
+            console.log("você é uma lenda!")
+        } else {
+            console.log("P#ta m$rda! isso foi do kct");
+        }
+
+
+
+        /*
+        Escreva um parâmetro que classifique
+         as notas em A, B, C, D, F;
+        */
+        console.log("\n\n\nVerificar notas da sua atividade");
+
+        let notasGrade = prompt("Digite o valor da sua nota de 1 a 5:\n A = > 90, B = > 80, C >60, D > 50, F < 50 ");
+
+
+        if (notasGrade < 50) {
+            console.log("Nem Noé, irmão - nota F");
+        } else if (notasGrade >= 50 && notasGrade < 60) {
+            console.log("Estude mais. - Nota D");
+        } else if (notasGrade >= 60 && notasGrade < 70) {
+            console.log("Mais um pouco e é um C");
+        } else if (notasGrade >= 70 && notasGrade <= 80) {
+            console.log("Mais um pouquinho meu mano - Nota B");
+        } else if (notasGrade > 80 && notasGrade <= 100) {
+            console.log("Parabéns! estude menos seu MEGAMENTE");
+        } else {
+            console.log("Avacalha não painho");
+        }
+
+
+
+        console.log("\n\nDesafio final\n\n");
+        console.log("escreva um programa que calcule o bônus de um vendedor com base em seu faturamento final");
+
+        /*
+        Faturamento abaixo de 1000 reais == sem bônus
+        Faturamento entre R$ 1.000 e R$ 5.000 > bônus 5%
+        Faturamento acima de R$ 5.000 > bônus 10%
+        */
+
+        let faturamento = parseFloat(prompt("Qual foi o valor do seu faturamento esse mês?"));
+        
+         if (faturamento < 1000) {
+             console.log("o valor do seu faturamento não teve bônus porque foi abaixo de 1000 reais.\nFaturamento: " + faturamento);
+
+         } else if (faturamento >= 1000 && faturamento <= 5000) {
+             let bonus = faturamento * 0.05;
+             console.log("Esse mês você teve um faturamento entre R$1.000 e R$5.000 e por isso você teve um bônus!\n Seu faturamento: " + faturamento + "\nSeu bônus: " + bonus);
+         } else if (faturamento > 5000) {
+             bonus = faturamento * 0.10;
+                 console.log("Esse mês você teve um faturamento maior que R$5.000 e por isso você teve um bônus! Excelente trabalho\n Seu faturamento: " + faturamento + "\nSeu bônus: " + bonus)
+         } else {
+             console.log("valor não aceito.")
+         }
+
+        // switch (faturamento == true) {
+
+
+        //     case faturamento < 1000:
+        //         console.log("o valor do seu faturamento não teve bônus porque foi abaixo de 1000 reais.\nFaturamento: " + faturamento);
+        //         break;
+
+        //     case faturamento >= 1000 && faturamento <= 5000:
+
+        //         let bonus = faturamento * 0.5;
+        //         console.log("Esse mês você teve um faturamento entre R$1.000 e R$5.000 e por isso você teve um bônus!\n Seu faturamento: " + faturamento + "\nSeu bônus: " + bonus);
+        //         break;
+
+        //     case faturamento > 5000:
+        //         bonus = faturamento * 0.10;
+        //         console.log("Esse mês você teve um faturamento maior que R$5.000 e por isso você teve um bônus! Excelente trabalho\n Seu faturamento: " + faturamento + "\nSeu bônus: " + bonus)
+        //         break;
+
+        //     //sem default   
+        // }
+
+
+        /*
+        // Função para verificar se o valor é um número e processar o caso
+function processarValor(valor) {
+    // Verificar se o valor é um número
+    if (isNaN(valor)) {
+        console.log("Erro: aceito apenas números");
+        return; // Saí do processo se o valor não for um número
+    }
+
+    // Converter o valor para número, se necessário
+    valor = Number(valor);
+
+    // Utilizar switch para tratar os valores numéricos
+    switch (valor) {
+        case 1:
+            console.log("Valor é 1");
+            break;
+        case 2:
+            console.log("Valor é 2");
+            break;
+        // Adicione mais casos conforme necessário
+        default:
+            console.log("Valor não reconhecido");
+            break;
+    }
+}
+
+// Testar com valores diferentes
+processarValor("abc");   // Saída: Erro: aceito apenas números
+processarValor(1);       // Saída: Valor é 1
+processarValor(3);       // Saída: Valor não reconhecido
+        */
+
+    </script>
+</body>
+
+</html>
