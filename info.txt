@@ -1,0 +1,21 @@
+Manipulação de arrays e objetos em javascript
+
+
+frutas[500] = "abacate";
+console.log(frutas)
+
+o que esse código faz?
+
+
+//aqui cria espaços para outros itens futuros e adiciona no cmd o valor de quantos itens tem
+
+
+[ 'Morango', 'novo Elemento', 'Banana', 'Açaí' ]
+[
+  'Morango',
+  'novo Elemento',
+  'Banana',
+  'Açaí',
+  <496 empty items>,
+  'abacate'
+]

@@ -148,3 +148,19 @@ console.log(frutas)
 console.log("\n\nvendo o tamanho da array")
 console.log(frutas.length)
 
+//
+frutas.splice(1, 0, "novo Elemento")
+console.log(frutas)
+
+
+//aqui cria espaços para outros itens futuros e adiciona no cmd o valor de quantos itens tem
+
+frutas[500] = "abacate";
+console.log(frutas)
+
+
+//ultimo elemento de um array
+console.log("mostrando o ultimo elemento da array de frutas")
+console.log(frutas[frutas.length - 1])
+
+
