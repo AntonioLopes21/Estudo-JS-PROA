@@ -102,3 +102,21 @@ switch (true) {
 }
 
 
+
+//arrays
+console.log("\n\n\n\nmexendo no índice numérico da array")
+let frutas = ["maçã", "Banana", "laranja"];
+console.log(frutas[2])
+
+//comando push
+//adiciona elementos no final do array
+console.log("adicionando elemento com push")
+frutas.push("manga");
+console.log(frutas);
+
+//POP
+//o pop remove o ultimo elemento do array
+console.log("após o pop - removendo elemento")
+frutas.pop();
+console.log(frutas)
+
