@@ -120,3 +120,31 @@ console.log("após o pop - removendo elemento")
 frutas.pop();
 console.log(frutas)
 
+//editar elemento
+frutas[2] = "Açaí";
+console.log(frutas)
+
+//adicionar elementos através do indice
+frutas[3] = "abacate";
+console.log("adicionando fruta no indice 3")
+console.log(frutas)
+
+
+console.log("removendo fruta do indice 3")
+frutas.pop(frutas[3]);
+console.log(frutas)
+
+
+//remover o primeiro elemento da array
+frutas.shift();
+console.log(frutas)
+
+//adicionar no início da array
+console.log("\nadicionando elemento no inicio do código")
+frutas.unshift("Morango");
+console.log(frutas)
+
+//lenght
+console.log("\n\nvendo o tamanho da array")
+console.log(frutas.length)
+
