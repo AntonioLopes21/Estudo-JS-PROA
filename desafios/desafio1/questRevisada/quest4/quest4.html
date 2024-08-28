@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const mediaNota = (n1, n2, n3, n4) => {
+    let media = (n1 + n2 + n3 + n4)/4
+    let resposta = ""
+
+    if(n1 >=11 || n1 <0 && n2 <0 || n2 >=11 && n3 <0 || n3 >=11 && n4 <0 || n4>11) {
+        console.log("não existe valor abaixo de zero ou maior que 10")
+    }
+
+    if(media <5) {
+        resposta = "Reprovado direto"
+    } else if (media =5 && media <7) {
+        resposta = "recuperação, baby"
+    } else {
+        resposta = "Aprovado, painho"
+    }
+
+    return resposta
+}
+
+const n1 = parseFloat(prompt("Digite o primeiro valor: "))
+
+const n2 = parseFloat(prompt("Digite o segundo valor: "))
+
+const n3 = parseFloat(prompt("Digite o terceiro valor: "))
+
+const n4 = parseFloat(prompt("Digite o quarto valor: "))
+
+prompt(mediaNota(n1,n2,n3,n4))
+    </script>
+    <script src="quest4media"></script>
+</body>
+</html>
