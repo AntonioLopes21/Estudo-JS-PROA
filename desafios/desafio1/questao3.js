@@ -24,7 +24,7 @@ function verificarCaracteres(mensagem) {
         }
     }
     //retorne a variavel com true ou false
-    return possuiCaractereSpecial + mensagem[i]
+    return possuiCaractereSpecial
 }
 
 console.log(verificarCaracteres("ola mundo!"))
