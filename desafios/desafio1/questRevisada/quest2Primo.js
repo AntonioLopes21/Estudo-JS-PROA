@@ -20,4 +20,4 @@ const ehPrimo = valor => {
     return primacidade
 }
 
-console.log(ehPrimo(502))
+console.log(ehPrimo(100))

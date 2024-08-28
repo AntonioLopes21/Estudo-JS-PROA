@@ -1,0 +1,17 @@
+
+const mediaNota = (n1, n2, n3, n4) => {
+    let media = (n1 + n2 + n3 + n4)/4
+    let resposta = ""
+
+    if(media <5) {
+        resposta = "Reprovado direto"
+    } else if (media =5 && media <7) {
+        resposta = "recuperação, baby"
+    } else {
+        resposta = "Aprovado, painho"
+    }
+
+    return resposta
+}
+
+console.log(mediaNota(0,5,5,0))
