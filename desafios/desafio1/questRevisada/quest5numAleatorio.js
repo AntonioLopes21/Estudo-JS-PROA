@@ -2,25 +2,25 @@
 
 const adivinhaNum = valor => {
     let numAleatorio = Math.floor(Math.random()*100) + 1
-    let resposta
+    
 
    
     do {
-        resposta = prompt("Digite um número: ")
+        valor = prompt("Digite um número: ")
         
-        if(resposta >= 0 && resposta <=100 || !resposta) {
+        if(valor >= 0 && valor <=100 || !valor) {
 
-        if(resposta != numAleatorio && resposta < numAleatorio) {
+        if(valor != numAleatorio && valor < numAleatorio) {
             console.log("Mais para cima")
         } 
         
-        if (resposta != numAleatorio && resposta > numAleatorio) {
+        if (valor != numAleatorio && valor > numAleatorio) {
             console.log("Mais para baixo")
         } 
     } else {
         console.log("Digite um número entre 0 e 100")
     }
-    } while (resposta != numAleatorio)
+    } while (valor != numAleatorio)
         alert("Acertou!!")
 }
 
