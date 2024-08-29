@@ -15,3 +15,4 @@ function contarVogais(str) {
 }
 
 console.log(contarVogais("palavra"))
+//commit
