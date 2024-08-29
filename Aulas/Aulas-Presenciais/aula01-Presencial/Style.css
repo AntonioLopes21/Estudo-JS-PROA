@@ -1,0 +1,44 @@
+#caixa {
+    border-radius: 4%;
+    background-color: chocolate;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/Aulas/Aulas-Presenciais/aula01-Presencial/img/4rlkz3umvi351.gif');
+
+}
+
+body {
+ width: 100%;
+ background: rgb(34,193,195);
+/* background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+
+
+ 
+}
+
+input {
+    text-align: center;
+    border-color: black;
+    border-radius: 4%;
+    background-color: rgba(254, 254, 254, 0.678);
+    
+}
+
+::placeholder {
+    color: rgba(254, 254, 254, 0.678);
+}
+
+label {
+    color: rgb(209, 110, 255);
+}
+
+.botao {
+    border-radius: 10%;
+    border-color: black;
+    background-color: green;
+}

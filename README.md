@@ -102,3 +102,8 @@ switch (true) {
 }
 
 
+//organizando projeto
+
+https://youtu.be/Px4bbFsf4f0?si=ZUKP78KBBk_Ai0dN
+
+attatat
