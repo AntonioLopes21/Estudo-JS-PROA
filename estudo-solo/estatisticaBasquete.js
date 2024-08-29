@@ -1,0 +1,3 @@
+const verificarDesempenho = (numeroJogos, pontuacao) => {
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let numeroJogos = prompt("quantos jogos você fez nessa temporada?")
+
+        let pontosJogo = []
+
+        for (let i = 0; i < numeroJogos; i++) {
+            
+            let pontuacaoPorJogo = prompt("quantos pontos você fez no jogo "+ (i+1))
+            
+            pontosJogo.push(pontuacaoPorJogo)
+            
+        }
+
+        let j = 0
+        for(i in pontosJogo) {
+            console.log((`partida ${++i}, pontuação ${pontosJogo[j++]}`))
+        }
+
+        let pontuacaoMaxima = Math.max(...pontosJogo)
+
+        console.log(pontuacaoMaxima)
+
+        let pontuacaoMinima = Math.min(...pontosJogo)
+        console.log(pontuacaoMinima)
+            
+        console.log(`Você jogou ${numeroJogos} jogos e sua maior pontuação ${pontuacaoMaxima} e sua menor pontuação foi ${pontuacaoMinima}`)
+        
+        //funções 
+        const verificarQuantidadeRecorde = () => {
+            
+        }
+
+
+
+    </script>
+</body>
+
+</html>
