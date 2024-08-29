@@ -7,6 +7,10 @@ function validarNome() {
     
     let nome = document.getElementById("nameInput").value
     let email = document.getElementsByName("emailInput").value
+
+    if(nome.length == 0) {
+        
+    }
 }
 
 const validacoes = () => {
