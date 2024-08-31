@@ -1,0 +1,29 @@
+#formulario {
+    background-image: url('img/gif-chill.gif');
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    border-radius: 2%;
+    align-content: center;
+}
+
+label {
+    color: white;
+}
+
+input{
+    height: 30px;
+    background-color: rgba(253, 253, 253, 0.307);
+}
+
+#btnForm {
+    color: white;
+    background-color: green;
+}
+
+::placeholder {
+    text-align: center;
+    color: rgb(255, 94, 94);
+}
