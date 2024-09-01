@@ -61,8 +61,6 @@ const sacarValor = () => {
 
 
 function sairSelecionar() {
-    let sairOpcao = document.getElementById('sair')
-    let voltar = sairOpcao.value
 
         alert('Obrigado e volte sempre!')
         window.location.href = 'banco.html'

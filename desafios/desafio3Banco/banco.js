@@ -27,8 +27,7 @@ function verificarSenha() {
     } else {
         alert('Acesso permitido')
         senhaLogin.style.border = 'green solid 3px'
-        let usuarioLogin = document.querySelector('#inputName').value; // Obtém o valor do nome
-        localStorage.setItem('inputName', usuarioLogin)
+        let usuarioLogin = document.querySelector('#inputName').value;
         window.location.href = 'menuInicial.html'
     }
 }
