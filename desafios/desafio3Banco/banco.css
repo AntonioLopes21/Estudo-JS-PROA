@@ -1,0 +1,67 @@
+body {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #181A1B;
+    color: white;
+}
+
+#proa {
+    
+}
+
+#loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #181A1B;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#proa {
+    color: cyan;
+    justify-content: center;
+    text-align: center;
+}
+
+#btn-login {
+    border: none;
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+#inputPassword {
+    border: none;
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+#inputName {
+    border: none;
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
