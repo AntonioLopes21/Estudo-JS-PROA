@@ -25,11 +25,11 @@ const depositarValor = () => {
         atualizarSaldoDisplay();
         
         // Adiciona a classe de erro para alterar a cor
-        saldoElement.classList.add('subtrair');
+        saldoElement.classList.add('adicionar');
 
         // Remove a classe de erro após 2 segundos
         setTimeout(() => {
-            saldoElement.classList.remove('subtrair');
+            saldoElement.classList.remove('adicionar');
         }, 2000);
 
         alert('Valor depositado com sucesso!');
@@ -61,9 +61,15 @@ const sacarValor = () => {
 
 
 function sairSelecionar() {
-    
+    let sairOpcao = document.getElementById('sair')
+    let voltar = sairOpcao.value
+
+        alert('Obrigado e volte sempre!')
+        window.location.href = 'banco.html'
+
 }
 
+document.getElementById('sair').addEventListener('click', sairSelecionar)
 // Adiciona ouvintes de eventos aos botões
 document.getElementById('depositar').addEventListener('click', depositarValor);
 document.getElementById('sacar').addEventListener('click', sacarValor);
