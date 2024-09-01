@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="menuInicial.css ">
 </head>
+
 <body>
-    <h1></h1>
+    
+        <h2 class="saldoExibido">Saldo: R$5000</h2>
+    
+    <h1 id="bem-vindo-texto"></h1>
+
+    <div class="container">
+        <button class="opcoes" id="sacar" onclick="sacarValor()">Sacar</button>
+        <button class="opcoes" id="depositar" onclick="depositarValor()">Depositar</button>
+        <button class="opcoes" id="saldo">ver saldo</button>
+        <button class="opcoes" id="extrato">ver extrato</button>
+        <button class="opcoes" id="sair" onclick="sairSelecionar()">Sair</button>
+    </div>
 
     <script src="menuInicial.js" defer></script>
 </body>
+
 </html>

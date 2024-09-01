@@ -1,0 +1,71 @@
+body {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #181A1B;
+    color: white;
+    background-image: url('/desafios/desafio3Banco/img/Plano_de_Fundo_11.webp');
+    background-repeat: no-repeat;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    filter: grayscale(70%);
+    
+}
+
+body img {
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#bem-vindo-texto {
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+
+h1 {
+    background-color: rgba(39, 39, 39, 0.321);
+    
+}
+
+
+.saldoExibido {
+    color: rgb(0, 255, 0);
+    padding-right: 23%;
+    padding-bottom: 5%;
+    transition: color 0.5s;
+}
+
+.saldoExibido.subtrair {
+    color: red; /* Cor vermelha para indicar subtracao */
+}
+
+
+
+.opcoes {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: #00bbffa4;
+    border-color: #00bbffa4;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}   
+
+.opcoes:hover {
+    background-color: #00aaff5b;
+}
