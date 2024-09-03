@@ -1,3 +1,0 @@
-const verificarDesempenho = (numeroJogos, pontuacao) => {
-
-}
