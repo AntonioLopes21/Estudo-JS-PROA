@@ -5,6 +5,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+
 let saldo = 5000;
 let usuario = '';
 const senhaFixa = 3333;
