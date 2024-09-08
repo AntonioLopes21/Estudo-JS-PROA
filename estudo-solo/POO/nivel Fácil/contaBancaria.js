@@ -36,7 +36,7 @@ class ContaBancaria {
     }
 
     getUsuario() {
-        return `nome:  da conta ${this.#numeroConta}`
+        return `nome:${this.#usuario}  da conta ${this.#numeroConta}`
     }
 
     exibirInfo() {
@@ -45,3 +45,10 @@ class ContaBancaria {
 }
 
 const usuario1  = new ContaBancaria('123456', 2999, 'Paulin')
+
+console.log(usuario1.getNumeroConta())
+console.log(usuario1.getSaldo())
+console.log(usuario1.getUsuario())
+
+console.log('\n')
+usuario1.exibirInfo()
