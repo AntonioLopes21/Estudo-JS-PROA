@@ -136,3 +136,4 @@ const design1 = new Designer('Rodrigo', 'Designer', 8000, 'figma')
 console.log(design1.baterPonto())
 console.log(design1.pausaAlmoco())
 console.log(design1.infoFuncionario())
+
