@@ -32,6 +32,7 @@ class Funcionario {
     }
 
     set setFuncao(funcao) {
+        
         if(funcao.toLowerCase() === 'desenvolvedor') {
             console.log(`O funcionário ${this.#nome} é ${this.#funcao}`)
             this.#funcao = funcao
