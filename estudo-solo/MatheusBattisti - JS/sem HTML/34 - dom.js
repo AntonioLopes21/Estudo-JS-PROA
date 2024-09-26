@@ -13,7 +13,8 @@
  * 
  * podemos acessar por tags, ids, classes...
  * 
- * 
+ * queryselector
+ * queryselectorAll
  */
 
 //tag 
@@ -27,3 +28,5 @@ var li = document.getElementsByTagName('li')
 
 var paragrafo = document.getElementById('paragrafo')
 
+//class
+var itensDaLista = document.getElementsByClassName('item')
